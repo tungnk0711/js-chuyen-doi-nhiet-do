@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fahrenheitToCelsius() {
+            var fahrenheit = document.getElementById('fahrenheit').value;
+            document.getElementById('result').innerHTML = (parseFloat(fahrenheit) - 32) / 1.8;
+        }
+    </script>
+</head>
+<body>
+Fahrenheit: <input type="text" id="fahrenheit" name="fahrenheit">
+<button type="button" onclick="fahrenheitToCelsius();">Convert</button>
+Celsius: <label id="result"></label>
+
+</body>
+</html>
